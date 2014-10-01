@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.musicmania.HomeActivity" >
+
+    <TextView
+        android:id="@+id/last_fm_demo_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last_fm_api_demo_text"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/searchTermEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/search_fm_btn"
+        android:layout_alignLeft="@+id/last_fm_demo_title_textview"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:inputType="textNoSuggestions" />
+
+    <ProgressBar
+        android:id="@+id/search_progress_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/search_fm_btn"
+        android:layout_marginBottom="61dp"
+        android:layout_marginRight="25dp" 
+        android:visibility="gone"/>
+
+    <RadioGroup
+        android:id="@+id/music_mania_radio_button_grp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/last_fm_demo_title_textview"
+        android:layout_below="@+id/last_fm_demo_title_textview"
+        android:layout_marginTop="18dp" >
+
+        <RadioButton
+            android:id="@+id/album_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/album_radio_button_text" />
+
+        <RadioButton
+            android:id="@+id/artist_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/artist_radio_button_text" />
+
+        <RadioButton
+            android:id="@+id/song_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/song_radio_button_text" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/enter_search_term_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/searchTermEditText"
+        android:layout_alignLeft="@+id/searchTermEditText"
+        android:text="@string/search_term_text"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/search_fm_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/searchTermEditText"
+        android:layout_below="@+id/music_mania_radio_button_grp"
+        android:layout_marginTop="104dp"
+        android:text="@string/search_last_fm_query_text" />
+
+</RelativeLayout>

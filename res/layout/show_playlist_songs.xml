@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/song_playlist_listview"
+        android:layout_width="match_parent"
+        android:layout_height="396dp"
+        android:layout_weight="1" 
+        android:listSelector="@drawable/item">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/delete_song_from_playlist_list_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/delete_song_from_playlist_text" />
+
+        <Button
+            android:id="@+id/delete_entire_playlist_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/delete_playlist_text" />
+
+    </LinearLayout>
+
+</LinearLayout>

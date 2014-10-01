@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.musicmania"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.musicmania.YouTubeDemo"
+            android:label="@string/youtube_api_demo_text"
+            android:screenOrientation="portrait"/>
+        
+        <activity
+            android:name="com.example.musicmania.LastFmApiSearch"
+            android:label="@string/last_fm_api_demo_text"
+            android:screenOrientation="portrait"/>
+        
+        <activity
+            android:name="com.example.musicmania.ShowListOfSearchItems"
+            android:label="@string/show_list_of_songs_title_text"
+            android:screenOrientation="portrait"/>
+        
+        <activity
+            android:name="com.example.musicmania.SongPage"
+            android:label="@string/song_page_title_text"
+            android:screenOrientation="portrait"/>
+        
+         <activity
+            android:name="com.example.musicmania.ShowPlayListSongs"
+            android:label="@string/song_playlist_text"
+            android:screenOrientation="portrait"/>
+         
+         <activity
+            android:name="com.example.musicmania.ProjectHomeActivity"
+            android:label="@string/project_home_title"
+            android:screenOrientation="portrait"/>
+         
+         <activity
+            android:name="com.example.musicmania.ShowMusicRecommendation"
+            android:label="@string/song_recommend_title"
+            android:screenOrientation="portrait"/>
+         
+         <activity
+            android:name="com.example.musicmania.LoginPage"
+            android:label="@string/user_login_title"
+            android:screenOrientation="portrait"/>
+         
+          <activity
+            android:name="com.example.musicmania.CreateNewPlaylist"
+            android:label="@string/create_new_playlist_title_text"
+            android:screenOrientation="portrait"/>
+         
+         <activity
+            android:name="com.example.musicmania.ArtistPage"
+            android:label="@string/artist_page_title_text"
+            android:screenOrientation="portrait"/>
+         
+         <activity
+            android:name="com.example.musicmania.ShowRecommendationHomePage"
+            android:label="@string/show_music_recommendation_title"
+            android:screenOrientation="portrait"/>
+         
+          <activity
+            android:name="com.example.musicmania.AlbumPage"
+            android:label="@string/album_page_title_text"
+            android:screenOrientation="portrait"/>
+          
+          <activity
+            android:name="com.example.musicmania.ShowPlayListNamesFromUser"
+            android:label="@string/show_playlist"
+            android:screenOrientation="portrait"/>
+         
+          <activity
+            android:name="com.example.musicmania.UserProfilePage"
+            android:label="@string/user_profile_text"
+            android:screenOrientation="portrait"/>
+          
+          <activity
+            android:name="com.example.musicmania.FollowOtherUsers"
+            android:label="@string/other_users_text"
+            android:screenOrientation="portrait"/>
+          
+          <activity
+            android:name="com.example.musicmania.ShowOtherUserPlaylist"
+            android:label="@string/show_playlist"
+            android:screenOrientation="portrait"/>
+          
+          <activity
+            android:name="com.example.musicmania.ShowOtherUserPlayListSong"
+            android:label="@string/song_playlist_text"
+            android:screenOrientation="portrait"/>
+       	
+    </application>
+
+</manifest>
